@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Inscription</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/bootstrap.min.css"> 
+    </head>
+
+    <h1 class="text-primary">Add Employee</h1>
+    <form method="GET" action="../php/ajouter_employe.php">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="Name" aria-describedby="emailHelp" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+            <label for="lastname">Username</label>
+            <input type="text" class="form-control" id="Lastname" aria-describedby="emailHelp" placeholder="Enter Lastname">
+          </div>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="Username" aria-describedby="emailHelp" placeholder="Enter Username">
+          </div>
+        <div class="form-group"></div>
+          <label for="InputPassword">Password</label>
+          <input type="password" class="form-control" id="Mdp" placeholder="Password">
+        </div><br><br>
+        <button type="submit" class="btn btn-primary">Add</button>
+        <button type="reset" class="btn btn-primary">Clear</button>
+    </form><br><br>
+
+    <h1 class="text-primary">Add Project</h1>
+    <form method="GET" action="../php/ajouter_projet.php">
+        <div class="form-group">
+          <label for="title">Name</label>
+          <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Enter Project Title">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Add</button>
+    </form><br><br>
+
+    <h1 class="text-primary">Assign Project</h1>
+    <form method="GET" action="../php/affecter_projet.php">
+        <div class="form-group">
+            <table>
+                <thead>
+                    <h4>Employees</h4><br>
+                    <tr><th>Name</th><th>Lastname</th><th>Choose</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td class="text-danger">Jamila</td><td class="text-danger">Sallem</td><td><button class="btn btn-info">Project Management</button></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="form-group">
+                <table>
+                    <thead>
+                        <h4>Projets</h4><br>
+                        <tr><th>Title</th><th>Choose</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="text-danger">Project Management</td><td><button class="btn btn-info">Project Management</button></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        
+        <button type="submit" class="btn btn-primary">Assign</button>
+    </form>
+
+    <body>
+
+    </body>
+</html>
