@@ -15,7 +15,7 @@ $req="INSERT INTO employe (id,name,lastname,username,password) VALUES(null,'$nam
 $resp=$base->exec($req);
 
 if ($resp==1){
-    echo "Employé insérées avec succès";
+    echo "Employé inséré avec succès";
 }
 else{
     echo "Vérifier la requete ou le fichier config";
